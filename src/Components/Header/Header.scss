@@ -1,56 +1,150 @@
+@use '../../styles/partials/mixins' as *;
+
 .header {
-    background-image: url('../../assets/images/1x/1x/Asset\ 6.png');
-    z-index: 2;
-    height: 219px;
-    position: fixed;
-    top: -2px;
+    background-image: url('../../assets/images/1x/1x/Asset\ 5.png');
     width: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
+    background-size: cover;
+    height: 277px;
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+    top: -2px;
+
+    &__mobile {
+        color: white;
+        padding: 12px;
+        height: 25px;
+        width: 25px;
+    }
+
+    &__logo {
+        height: 89px;
+        width: 89px;
+        position: relative;
+        top: 12px;
+        border-radius: 50%;
+        z-index: 5;
+        right: 15px;
+
+    }
 
     &__left {
-        padding: 18px 30px 0px 30px;
-        text-decoration: none;
-        color: white;
+        //     color: #351508;
+        //     font-weight: bold;
+        //     padding-top: 12px;
+        //     font-size: 25px;
+        //     position: fixed;
+        //     // right: 10px;
+        //     left: 50%; /* Position at 50% from the left */
+        // transform: translateX(-50%);
+        display: none;
     }
 
     &__right {
-        display: flex;
-        width: 40%;
-        justify-content: space-evenly;
-        padding-top: 18px;
+        display: none
+    }
 
-        &--buy {
-            color: white;
-            text-decoration: none;
-        }
 
-        &--about {
-            color: white;
-            text-decoration: none;
-        }
+    @include tablet {
 
-        &--auth {
+        background-image: url('../../assets/images/1x/1x/Asset\ 6.png');
+        height: 219px;
+        font-size: 32px;
+        // justify-content: end;
+        position: fixed;
+
+        &__left {
             display: flex;
+            padding: 14px 30px 0px 30px;
+            text-decoration: none;
+            color: white;
+            left: 20px;
+            position: relative;
+            // justify-self: left;
+        }
 
-            &--login {
-                padding-right: 30px;
-                border-right: 2px solid white;
-                height: max-content;
-                text-decoration: none;
+        &__right {
+            display: flex;
+            width: 50%;
+            justify-content: space-evenly;
+            padding-top: 14px;
+            position: relative;
+            // right: 30px;
+
+            &--buy {
                 color: white;
+                text-decoration: none;
             }
 
-            &--signup {
-                padding-left: 30px;
-                text-decoration: none;
+            &--about {
                 color: white;
+                text-decoration: none;
+            }
+
+            &--auth {
+                display: flex;
+
+                &--login {
+                    padding-right: 20px;
+                    border-right: 2px solid white;
+                    height: max-content;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &--signup {
+                    padding-left: 20px;
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
+
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+        position: relative;
+        left: 13px;
+        top: 13px;
+        color: white;
+        width: 36px;
+        height: 42px;
+        z-index: 4;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    z-index: 3;
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        padding: 16px 0px;
+        border-bottom: 1px white solid;
+
+        &:hover {
+            background-color: grey;
+        }
+    }
+}
+
+.open {
+    display: flex;
 }

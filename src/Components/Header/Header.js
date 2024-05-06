@@ -1,32 +1,66 @@
 import './Header.scss';
-import logo from '../../assets/images/Designer-removebg-preview.png';
-// import { Link } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { List } from 'react-bootstrap-icons';
+import logo from '../../assets/images/Designer-removebg-preview.png';
+
 
 function Header() {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
+    const closeDropdown = () => {
+        setDropdownOpen(false);
+    };
 
     return (
-        <section className='header'>
-            <Link to='#' className='header__left'>
-                Chaia's Cookies
-            </Link>
-            <div className='header__right'>
-                <Link className='header__right--buy'>
+        <>
+            <header>
+                <div className='mobile-header'>
+                    <List className='mobile-header__list' onClick={toggleDropdown} />
+                    <img src={logo} alt='logo' className='header__logo' />
+                </div>
+            </header>
+            <div className={`menu ${dropdownOpen ? 'open' : ''}`} onClick={closeDropdown}>
+                <Link to='#' className='menu__link'>
                     Buy
                 </Link>
-                <Link className='header__right--about'>
+                <Link to='#' className='menu__link'>
                     About
                 </Link>
-                <div className='header__right--auth'>
-                    <Link className='header__right--auth--login'>
-                        Login
-                    </Link>
-                    <Link className='header__right--auth--signup'>
-                        Sign Up
-                    </Link>
-                </div>
+                <Link to='#' className='menu__link'>
+                    Login
+                </Link>
+                <Link to='#' className='menu__link'>
+                    Sign Up
+                </Link>
             </div>
-        </section>
+            <section className='header'>
+                <Link to='#' className='header__left'>
+                    Chaia's Cookies
+                </Link>
+                <div className='header__right'>
+                    <Link className='header__right--buy'>
+                        Buy
+                    </Link>
+                    <Link className='header__right--about'>
+                        About
+                    </Link>
+                    <div className='header__right--auth'>
+                        <Link className='header__right--auth--login'>
+                            Login
+                        </Link>
+                        <Link className='header__right--auth--signup'>
+                            Sign Up
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </>
+
     )
 }
 
