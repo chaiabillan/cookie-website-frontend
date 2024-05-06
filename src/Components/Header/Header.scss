@@ -1,0 +1,56 @@
+.header {
+    background-image: url('../../assets/images/1x/1x/Asset\ 6.png');
+    z-index: 2;
+    height: 219px;
+    position: fixed;
+    top: -2px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    &__left {
+        padding: 18px 30px 0px 30px;
+        text-decoration: none;
+        color: white;
+    }
+
+    &__right {
+        display: flex;
+        width: 40%;
+        justify-content: space-evenly;
+        padding-top: 18px;
+
+        &--buy {
+            color: white;
+            text-decoration: none;
+        }
+
+        &--about {
+            color: white;
+            text-decoration: none;
+        }
+
+        &--auth {
+            display: flex;
+
+            &--login {
+                padding-right: 30px;
+                border-right: 2px solid white;
+                height: max-content;
+                text-decoration: none;
+                color: white;
+            }
+
+            &--signup {
+                padding-left: 30px;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
