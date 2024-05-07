@@ -2,7 +2,10 @@
 @use './styles/partials/mixins' as *;
 @use './styles/partials/fonts' as *;
 
-.learn-more__button {
+.learn-more {
+    width: 100%;
+    
+    &__button {
     border-radius: 10px;
     outline: none;
     border: none;
@@ -13,6 +16,7 @@
     width: 100%;
     font-weight: bold;
     font-size: 20px;
+    }
 }
 
 .App {

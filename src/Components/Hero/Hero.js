@@ -18,7 +18,7 @@ function Hero() {
                 Made with love <HeartFill className='hero__description--info--heart' />
             </p>
             <img className='hero__cookies' src={cookiestack} />
-            <Link to='/about'>
+            <Link to='/about' className='learn-more'>
                 <button className='learn-more__button normal'>
                     Learn More
                 </button>

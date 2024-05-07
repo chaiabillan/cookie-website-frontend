@@ -17,11 +17,12 @@ function HomeBCCancer() {
                     <p className='ef__description--text'>
                         Proceeds from each purchase will be donated to the BC Cancer Foundation.
                         {/* <LoremIpsum/> */}
+                        akjhf kalsjfhpa fk;jsahf akjsfhalfkjhalskfjh akf klasjhf fkajshflaskfhjas
                     </p>
                 </div>
                 <img src={BCCancer} alt='eflogo' className='ef__logo' />
             </div>
-            <Link to='#'>
+            <Link to='#' className='learn-more'>
                 <button className='learn-more__button normal'>
                     Learn More
                 </button>

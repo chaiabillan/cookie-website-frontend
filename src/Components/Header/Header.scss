@@ -7,7 +7,7 @@
     background-position: right;
     background-size: cover;
     height: 277px;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     top: -2px;
@@ -17,16 +17,18 @@
         padding: 12px;
         height: 25px;
         width: 25px;
+        position: fixed;
     }
 
     &__logo {
         height: 76px;
         width: 76px;
-        position: relative;
+        position: fixed;
         top: 10px;
         border-radius: 50%;
         z-index: 5;
         right: 15px;
+        box-shadow: 2px 2px 1px #DEC7AD;
     }
 
     &__left {
@@ -109,7 +111,7 @@
     justify-content: space-between;
 
     &__list {
-        position: relative;
+        position: fixed;
         left: 13px;
         top: 23px;
         color: white;

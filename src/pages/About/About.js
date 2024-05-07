@@ -8,7 +8,7 @@ function About() {
     return (
         <section className='about'>
             <p className='page-title'>
-                About Chaia's Cookies
+                About Chaia's <br></br> Cookies
             </p>
             <AboutRecipe />
             <AboutChef />

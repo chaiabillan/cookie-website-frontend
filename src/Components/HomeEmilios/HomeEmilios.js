@@ -19,7 +19,7 @@ function HomeEmilios() {
                         </p>
                     </div>
                 </div>
-                <Link to='#'>
+                <Link to='/buy' className='learn-more'>
                     <button className='learn-more__button normal'>
                         Learn More
                     </button>
