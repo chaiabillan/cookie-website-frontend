@@ -2,5 +2,18 @@
 @use '../../styles/partials/mixins' as *;
 
 .buy {
-    height: 1000px;
+    // height: 1000px;
+    margin: 189px 16px 16px 16px;
+    
+
+    &__subtitle {
+        border-bottom: 2px solid $DarkBrown;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    &__map {
+        width: 100%;
+        height: 300px;
+    }
 }
