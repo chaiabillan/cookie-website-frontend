@@ -1,0 +1,33 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+.ef {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    align-items: center;
+    margin-bottom: 8px;
+    border-top: 1px solid #3C190B;
+
+    &__logo {
+        height: 100px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+
+    &__description {
+
+        &--title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        &--text {
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.chef {
+    margin-top: 40px;
+
+    &__title {
+        border-bottom: 2px solid $DarkBrown;
+        padding-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 18px;
+
+        &--image {
+            height: 136px;
+            float: left;
+            border-radius: 10px;
+            margin: 0px 5px 3px 0px;
+        }
+    }
+}

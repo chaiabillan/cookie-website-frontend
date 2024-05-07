@@ -1,27 +1,28 @@
 import cookiestack from '../../assets/images/stackofcookiesplaceholder.png';
 import './Hero.scss'
 import flour from '../../assets/images/flour.png';
+import { HeartFill } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 
-function Hero () {
+function Hero() {
 
     return (
         <section className='hero'>
-            {/* <img src={flour} alt='flour' className='hero__flour'/> */}
-
-            <p className='hero__title'>
+            <p className='page-title'>
                 Chaia's Cookies
             </p>
-            <p className='hero__description'>
+            <p className='page-subtitle'>
                 The Perfect Chocolate <br></br> Chip Cookie.
             </p>
             <p className='hero__description--info'>
-                Made with love - and brown butter... same thing. 
+                Made with love <HeartFill className='hero__description--info--heart' />
             </p>
             <img className='hero__cookies' src={cookiestack} />
-
-            <button className='hero__button'>
-                Learn More
-            </button>
+            <Link to='/about'>
+                <button className='learn-more__button normal'>
+                    Learn More
+                </button>
+            </Link>
         </section>
     )
 }

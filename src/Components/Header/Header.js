@@ -1,9 +1,9 @@
 import './Header.scss';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { useState } from 'react';
 import { List } from 'react-bootstrap-icons';
 import logo from '../../assets/images/Designer-removebg-preview.png';
-
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -21,7 +21,7 @@ function Header() {
             <header>
                 <div className='mobile-header'>
                     <List className='mobile-header__list' onClick={toggleDropdown} />
-                    <img src={logo} alt='logo' className='header__logo' />
+                    <Link to ='/'><img src={logo} alt='logo'className='header__logo' /></Link>
                 </div>
             </header>
             <div className={`menu ${dropdownOpen ? 'open' : ''}`} onClick={closeDropdown}>

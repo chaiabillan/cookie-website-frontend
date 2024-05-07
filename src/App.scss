@@ -1,3 +1,47 @@
-// .App {
+@use './styles/partials/variables' as *;
+@use './styles/partials/mixins' as *;
+@use './styles/partials/fonts' as *;
 
-// }
+.learn-more__button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #3C190B;
+    padding: 8px 10px;
+    // margin-top: 12px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.App {
+    background-image: url('./assets/images/woodenbackground1.jpeg');
+    // height: 2000px;
+    // width: 100%;
+    // rotate: ;
+    // transform: rotate(90deg);
+    background-size: cover;
+    // height: 3000px; /* delete once everything has been added */
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+}
+
+.page-title {
+    font-size: 70px;
+    color: $DarkBrown;
+    font-weight: bold;
+    margin: 8px 0px 6px 0px;
+    line-height: 62px;
+    position: relative;
+}
+
+.page-subtitle {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0px 11px 0px;
+    color: #3C190B;
+    line-height: 30px;
+}
