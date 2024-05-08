@@ -30,7 +30,7 @@ function Footer() {
                         Buy In Store
                     </p>
                     <a href='https://maps.app.goo.gl/zfHnancwSrHGrvBZ8' className='footer__buy--address'>
-                        <p className='footer__buy--address--link'>
+                        <p className='footer__buy--address--link footer__buy--address--link--title'>
                             Emilio Finatti Pizzeria
                         </p>
                         <p className='footer__buy--address--link'>
