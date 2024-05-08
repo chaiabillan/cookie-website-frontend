@@ -1,16 +1,16 @@
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { List } from 'react-bootstrap-icons';
+// import { List } from 'react-bootstrap-icons';
 import logo from '../../assets/images/Designer-removebg-preview.png';
 
 
 function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen);
-    };
+    // const toggleDropdown = () => {
+    //     setDropdownOpen(!dropdownOpen);
+    // };
 
     const closeDropdown = () => {
         setDropdownOpen(false);
