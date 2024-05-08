@@ -19,4 +19,18 @@
             margin: 0px 5px 3px 0px;
         }
     }
+
+    @include tablet {
+        margin-top: -7px;
+        padding: 16px 50px;        
+        
+        &__description {
+            padding: 16px 50px;
+            font-size: 24px;
+
+            &--image {
+                height: 176px;
+            }
+        }
+    }
 }

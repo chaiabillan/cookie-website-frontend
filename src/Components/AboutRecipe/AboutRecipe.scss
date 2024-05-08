@@ -7,6 +7,7 @@
     // display: inline;
     font-size: 18px;
 
+
     &__top {
         margin-bottom: 3px;
         margin-top: 10px;
@@ -24,6 +25,11 @@
     &__subtitle {
         margin-top: 30px;
     }
+
+    @include tablet {
+        padding: 16px 50px;
+        font-size: 24px;
+    }
 }
 
 .ingredients {
@@ -35,6 +41,14 @@
         border: 2px solid $DarkBrown;
         border-radius: 50%;
         margin: 2px 3px;
+    }
+
+    @include tablet {
+        padding: 0px 70px;
+
+        &__indiv {
+            height: 49px;
+        }
     }
 }
 
@@ -51,6 +65,11 @@
     padding: 9px 0px;
     height: 29px;
     width: 49px;
+
+    @include tablet {
+        height: 49px;
+        width: 52px;
+    }
 }
 .eggs {
     padding: 8px 5px;

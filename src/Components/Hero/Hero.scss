@@ -61,7 +61,28 @@
     }
 
     @include tablet {
-        margin-top: 250px;
+        margin: 100px 56px 30px 56px;
+        padding: 0px;
+
+        &__top {
+            display: flex;
+            flex-direction: row;
+
+            &--left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 40px;
+            }
+        }
+
+        &__description {
+
+            &--info {
+                font-size: 34px;
+            }
+        }
 
         &__title {
             font-size: 88px;
@@ -71,5 +92,7 @@
             width: 300px;
             height: 300px;
         }
+
+
     }
 }

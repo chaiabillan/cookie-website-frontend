@@ -11,7 +11,7 @@ function Buy() {
             <p className='page-subtitle buy__subtitle'>
                 In-Store
             </p>
-            <p>
+            <p className='buy__description'>
                 Come on down to Emilio Finatti Port Moody to purchase
                 cookies! <LoremIpsum />
             </p>
@@ -26,10 +26,10 @@ function Buy() {
                 title="Google Map"
                 className='buy__map'
             />
-            <p className='page-subtitle buy__subtitle'>
+            <p className='page-subtitle buy__subtitle buy__subtitle--online'>
                 Online
             </p>
-            <p>
+            <p className='buy__description'>
                 Online ordering will be available soon! Monitor this website to check for updates!
                 <LoremIpsum />
             </p>

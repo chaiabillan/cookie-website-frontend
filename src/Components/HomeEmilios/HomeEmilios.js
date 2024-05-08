@@ -17,6 +17,11 @@ function HomeEmilios() {
                         <p className='ef__description--text'>
                             Make the perfect pairing with some delicious pizza and gooey chocolate chip cookies.
                         </p>
+                        <Link to='/buy' className='tablet-learn-more'>
+                            <button className='tablet-learn-more__button normal'>
+                                Where to buy
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <Link to='/buy' className='learn-more'>

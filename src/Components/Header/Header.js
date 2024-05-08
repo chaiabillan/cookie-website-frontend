@@ -1,9 +1,9 @@
 import './Header.scss';
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { List } from 'react-bootstrap-icons';
 import logo from '../../assets/images/Designer-removebg-preview.png';
-import { useNavigate } from 'react-router-dom';
+
 
 function Header() {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -39,14 +39,14 @@ function Header() {
                 </Link>
             </div>
             <section className='header'>
-                <Link to='#' className='header__left'>
-                    Chaia's Cookies
+                <Link to='/' className='header__left'>
+                    <img src={logo} alt='logo' className='header__left--logo'/>
                 </Link>
                 <div className='header__right'>
-                    <Link className='header__right--buy'>
+                    <Link to='/buy' className='header__right--buy'>
                         Buy
                     </Link>
-                    <Link className='header__right--about'>
+                    <Link to ='/about' className='header__right--about'>
                         About
                     </Link>
                     <div className='header__right--auth'>

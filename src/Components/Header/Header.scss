@@ -41,6 +41,8 @@
         //     left: 50%; /* Position at 50% from the left */
         // transform: translateX(-50%);
         display: none;
+
+
     }
 
     &__right {
@@ -58,17 +60,25 @@
 
         &__left {
             display: flex;
-            padding: 14px 30px 0px 30px;
+            padding: 10px 30px 0px 30px;
             text-decoration: none;
             color: white;
-            left: 20px;
+            // left: 20px;
+            right: 10px;
             position: relative;
             // justify-self: left;
+
+            &--logo {
+                height: 50px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 1px white;
+            }
         }
 
         &__right {
             display: flex;
-            width: 50%;
+            // width: 50%;
+            width: 32%;
             justify-content: space-evenly;
             padding-top: 14px;
             position: relative;
@@ -85,7 +95,8 @@
             }
 
             &--auth {
-                display: flex;
+                display: none;
+                // display: flex;
 
                 &--login {
                     padding-right: 20px;

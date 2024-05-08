@@ -15,9 +15,9 @@ function HomeBCCancer() {
                         Support the BC Cancer Foundation!
                     </p>
                     <p className='ef__description--text'>
-                        Proceeds from each purchase will be donated to the BC Cancer Foundation.
-                        {/* <LoremIpsum/> */}
-                        akjhf kalsjfhpa fk;jsahf akjsfhalfkjhalskfjh akf klasjhf fkajshflaskfhjas
+                        {/* Proceeds from each purchase will be donated to the BC Cancer Foundation. */}
+                        <LoremIpsum/>
+                        {/* akjhf kalsjfhpa fk;jsahf akjsfhalfkjhalskfjh akf klasjhf fkajshflaskfhjas */}
                     </p>
                 </div>
                 <img src={BCCancer} alt='eflogo' className='ef__logo' />

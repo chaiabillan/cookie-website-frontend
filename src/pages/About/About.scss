@@ -9,4 +9,15 @@
         padding-bottom: 8px;
         border-bottom: 2px solid $DarkBrown;
     }
+
+    @include tablet {
+        margin: 226px 55px 16px 55px;
+    }
+}
+
+.mobile-break {
+
+    @include tablet {
+        display: none;
+    }
 }
