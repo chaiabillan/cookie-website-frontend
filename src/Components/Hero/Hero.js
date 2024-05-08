@@ -1,6 +1,6 @@
 import cookiestack from '../../assets/images/stackofcookiesplaceholder.png';
 import './Hero.scss'
-import flour from '../../assets/images/flour.png';
+// import flour from '../../assets/images/flour.png';
 import { HeartFill } from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ function Hero() {
                         </button>
                     </Link>
                 </div>
-                <img className='hero__cookies' src={cookiestack} />
+                <img className='hero__cookies' src={cookiestack} alt='cookiestack'/>
             </div>
             <Link to='/about' className='learn-more'>
                 <button className='learn-more__button normal'>
