@@ -16,7 +16,7 @@ function AboutChef() {
                 find the words to express my
                 love for people, I go straight
                 to the kitchen and bake them something - usually 
-                chocolate chip cookies! <LoremIpsum />
+                chocolate chip cookies! <LoremIpsum className='chef__description'/>
             </p>
             
         </section>

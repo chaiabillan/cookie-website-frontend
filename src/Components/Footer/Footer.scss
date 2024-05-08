@@ -1,0 +1,174 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.footer {
+    background-color: $DarkBrown;
+    // height: 400px;
+    color: $LightBrown;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__contact {
+        margin: 6px 0px;
+
+        &--title {
+            font-size: 28px;
+            margin: 10px 0px;
+            font-weight: bold;
+            color: $LightBrown;
+        }
+
+        &--email {
+            font-size: 20px;
+            margin: 5px 0px;
+            color: $LightBrown;
+
+            &--link {
+                text-decoration: none;
+                color: $LightBrown;
+                padding-left: 7px;
+            }
+        }
+
+        &--instagram {
+            font-size: 20px;
+            margin: 5px 0px;
+            color: $LightBrown;
+
+            &--link {
+                text-decoration: none;
+                color: $LightBrown;
+                padding-left: 7px;
+            }
+        }
+    }
+
+    &__buy {
+        margin: 6px 0px;
+
+        &--title {
+            font-size: 28px;
+            margin: 10px 0px;
+            font-weight: bold;
+            color: $LightBrown;
+        }
+
+        &--address {
+            font-size: 20px;
+            text-decoration: none;
+
+            &--link {
+                // color: white;
+                margin: 5px 0px;
+                color: $LightBrown;
+
+            }
+        }
+    }
+
+    &__image {
+
+        &--logo {
+            height: 70px;
+            width: 70px;
+            margin: 15px 0px;
+            border-radius: 50%;
+        }
+
+        &--cookies {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        flex-direction: row;
+        // justify-content: space-evenly;
+        height: 450px;
+        padding: 20px;
+        overflow-y: hidden;
+
+        &__contact {
+            padding-bottom: 30px;
+
+            &--title {
+                font-size: 38px;
+            }
+
+            &--email {
+                font-size: 28px;
+            }
+
+            &--instagram {
+                font-size: 28px;
+            }
+        }
+
+        &__buy {
+
+    
+            &--title {
+                font-size: 35px;
+
+            }
+    
+            &--address {
+                font-size: 28px;
+
+            }
+        }
+
+        &__image {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+
+
+            &--logo {
+                display: none;
+            }
+
+            &--cookies {
+                display: block;
+                height: 450px;
+
+            }
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            justify-content: space-between;
+        }
+    }
+
+    @include desktop {
+
+        &__left {
+            flex-direction: row;
+            // justify-content: space-evenly;
+            justify-content: center;
+            width: 70%;
+        }
+
+        &__contact {
+            border-right: 1px $LightBrown solid;
+            padding-right: 100px;
+
+            &--title {
+                padding-bottom: 20px;
+            }
+        }
+
+        &__buy {
+            padding-left: 100px;
+
+            &--title {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+}

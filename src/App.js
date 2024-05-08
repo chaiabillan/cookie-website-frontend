@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Buy from './pages/Buy/Buy';
 
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/buy' element={<Buy/>}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
