@@ -26,7 +26,7 @@ function HomeEmilios() {
                 </div>
                 <Link to='/buy' className='learn-more'>
                     <button className='learn-more__button normal'>
-                        Learn More
+                        Where to buy
                     </button>
                 </Link>
             </section>

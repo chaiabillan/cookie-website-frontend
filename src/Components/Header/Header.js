@@ -20,7 +20,7 @@ function Header() {
         <>
             <header>
                 <div className='mobile-header'>
-                    <List className='mobile-header__list' onClick={toggleDropdown} />
+                    {/* <List className='mobile-header__list' onClick={toggleDropdown} /> */}
                     <Link to ='/'><img src={logo} alt='logo'className='header__logo' /></Link>
                 </div>
             </header>

@@ -22,11 +22,11 @@ function HomeBCCancer() {
                 </div>
                 <img src={BCCancer} alt='eflogo' className='ef__logo' />
             </div>
-            <Link to='#' className='learn-more'>
+            {/* <Link to='#' className='learn-more'>
                 <button className='learn-more__button normal'>
                     Learn More
                 </button>
-            </Link>
+            </Link> */}
         </section>
     )
 }

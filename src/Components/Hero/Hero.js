@@ -29,7 +29,7 @@ function Hero() {
             </div>
             <Link to='/about' className='learn-more'>
                 <button className='learn-more__button normal'>
-                    Learn More
+                    More About Chaia's Cookies
                 </button>
             </Link>
         </section>
