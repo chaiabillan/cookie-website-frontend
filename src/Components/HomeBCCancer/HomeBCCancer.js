@@ -2,7 +2,7 @@
 // import './HomeEmilios.scss';
 // import eflogo from '../../assets/images/eflogo.png';
 import BCCancer from '../../assets/images/BC-Cancer-logo.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import LoremIpsum from 'react-lorem-ipsum';
 
 function HomeBCCancer() {
