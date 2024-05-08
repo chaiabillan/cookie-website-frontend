@@ -20,6 +20,7 @@
         width: 100%;
         font-weight: bold;
         font-size: 20px;
+        cursor: pointer;
     }
 
     @include tablet {
@@ -47,6 +48,7 @@
             font-weight: bold;
             font-size: 20px;
             margin-top: 8px;
+            cursor: pointer;
         }
     }
 }

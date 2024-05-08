@@ -33,4 +33,15 @@
             }
         }
     }
+
+    @include desktop {
+
+        &__description {
+            font-size: 29px;
+
+            &--image {
+                height: 227px;
+            }
+        }
+    }
 }

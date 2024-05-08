@@ -92,7 +92,9 @@
             width: 300px;
             height: 300px;
         }
+    }
 
-
+    @include desktop {
+        margin: 156px 56px 30px 56px;
     }
 }

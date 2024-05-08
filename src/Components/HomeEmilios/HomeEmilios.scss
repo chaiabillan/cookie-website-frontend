@@ -53,4 +53,18 @@
             }
         }
     }
+
+    @include desktop {
+        margin: 32px 229px;
+
+        &__description {
+            &--title {
+                font-size: 32px;
+            }
+
+            &--text {
+                font-size: 28px;
+            }
+        }
+    }
 }

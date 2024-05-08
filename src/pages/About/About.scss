@@ -13,6 +13,10 @@
     @include tablet {
         margin: 226px 55px 16px 55px;
     }
+
+    @include desktop {
+        margin: 229px 229px 16px 229px;
+    }
 }
 
 .mobile-break {

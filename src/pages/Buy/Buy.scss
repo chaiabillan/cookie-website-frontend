@@ -35,4 +35,12 @@
             padding: 0px 50px;
         }
     }
+
+    @include desktop {
+        margin: 229px 229px 16px 229px;
+
+        &__description {
+            font-size: 29px;
+        }
+    }
 }
