@@ -37,6 +37,9 @@ function Footer() {
                             2818 St. Johns Street
                         </p>
                         <p className='footer__buy--address--link'>
+                            V3H 2C1
+                        </p>
+                        <p className='footer__buy--address--link'>
                             Port Moody, BC
                         </p>
                     </a>
