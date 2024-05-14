@@ -54,6 +54,13 @@
             height: 49px;
         }
     }
+
+    @include desktop {
+
+        &__indiv {
+            height: 62px;
+        }
+    }
 }
 
 .butter {
@@ -73,6 +80,11 @@
     @include tablet {
         height: 49px;
         width: 52px;
+    }
+
+    @include desktop {
+        height: 62px;
+        width: 67px;
     }
 }
 .eggs {

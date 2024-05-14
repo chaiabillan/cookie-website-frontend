@@ -15,7 +15,7 @@ function HomeEmilios() {
                             Come and find us at Emilio Finatti Pizzeria in Port Moody!
                         </p>
                         <p className='ef__description--text'>
-                            Make the perfect pairing with some delicious pizza and gooey chocolate chip cookies.
+                            Create the perfect pairing with some delicious pizza and gooey chocolate chip cookies.
                         </p>
                         <Link to='/buy' className='tablet-learn-more'>
                             <button className='tablet-learn-more__button normal'>
