@@ -5,7 +5,7 @@ import Header from './Components/Header/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About/About';
 import Buy from './pages/Buy/Buy';
-
+import SignUp from './pages/SignUp/SignUp';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import Footer from './Components/Footer/Footer';
 
@@ -21,6 +21,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>}/>
           <Route path='/buy' element={<Buy/>}/>
+          <Route path='/signup' element={<SignUp/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
