@@ -4,9 +4,7 @@
 
 * {
     box-sizing: border-box;
-    // overflow-x: hidden;
     color: $DarkBrown;
-
 }
 
 .learn-more {
@@ -19,7 +17,6 @@
         color: white;
         background-color: #3C190B;
         padding: 8px 10px;
-        // margin-top: 12px;
         width: 100%;
         font-weight: bold;
         font-size: 20px;
@@ -46,7 +43,6 @@
             color: white;
             background-color: #3C190B;
             padding: 8px 10px;
-            // margin-top: 12px;
             width: 100%;
             font-weight: bold;
             font-size: 20px;
@@ -58,12 +54,7 @@
 
 .App {
     background-image: url('./assets/images/woodenbackground1.jpeg');
-    // height: 2000px;
-    // width: 100%;
-    // rotate: ;
-    // transform: rotate(90deg);
     background-size: cover;
-    // height: 3000px; /* delete once everything has been added */
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -94,5 +85,94 @@
     @include tablet {
         font-size: 41px;
         line-height: 35px;
+    }
+}
+
+.auth {
+    height: 700px;
+    position: relative;
+    top: 140px;
+    padding: 16px;
+    z-index: -1;
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 2px solid $DarkBrown;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+        top: 150px;
+        padding: 50px;
+
+        &__title {
+            font-size: 40px;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+
+        &--label {
+            font-size: 20px;
+            padding-top: 12px;
+            font-weight: bold;
+        }
+
+        &--input {
+            border-radius: 10px;
+            padding: 6px 10px;
+            outline: none;
+            border: none;
+
+            &:focus {
+                border: 1px solid $DarkBrown;
+                outline: none;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 12px;
+        color: $LightBrown;
+        background-color: $DarkBrown;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 0px;
+        font-size: 20px;
+    }
+
+    @include tablet {
+        align-items: flex-end;
+        padding: 0% 25%;
+
+        &__section {
+            flex-direction: row;
+            padding-top: 16px;
+            width: 100%;
+            justify-content: flex-end;
+
+            &--label {
+                padding-right: 10px;
+            }
+
+            &--input {
+                width: 60%;
+            }
+        }
+
+        &__button {
+            width: 40%;
+            align-self: flex-end;
+        }
     }
 }
